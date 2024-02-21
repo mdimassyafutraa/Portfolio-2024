@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="public/assets/img/icon.png" />
+    <title>M. Dimas Syafutra</title>
+
+    <!-- CSS Tailwind -->
+    <link rel="stylesheet" href="public/src/tailwind.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Animation Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="font-poppins bg-background">
+    <!-- Header -->
+    <header class="text-font top-0 right-0 left-0 fixed transition-all duration-300">
+      <nav class="max-w-7xl mx-auto p-5 bg-navbar md:bg-transparent">
+        <div class="flex items-center justify-between">
+          <div>
+            <a href="" class="font-semibold tracking-widest uppercase">My Fortpolio</a>
+          </div>
+          <!-- Large Device -->
+          <div class="hidden md:flex space-x-10 items-center">
+            <a href="#about" class="hover:text-gray-300 font-semibold">About</a>
+            <a href="#skills" class="hover:text-gray-300 font-semibold tracking-wider">Skilss</a>
+            <a href="#projects" class="hover:text-gray-300 font-semibold">projects</a>
+            <a href="#contact" class="hover:text-gray-300 font-semibold">Contact</a>
+            <a
+              href="public/assets/resume/Cv M Dimas Syafutra.pdf"
+              download
+              target="_blank"
+              class="px-3 py-2 rounded-lg border-2 tracking-widest hover:bg-primary border-primary text-font font-medium text-sm hover:shadow-lg hover:shadow-[#5dadec3b] transition-all ease-in-out duration-300"
+              >Resume</a
+            >
+          </div>
+          <!-- Mobile Device -->
+          <div class="md:hidden">
+            <button id="toggleMenu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden text-center mt-5">
+          <a href="#about" class="hover:text-gray-300 font-semibold block py-3">About</a>
+          <a href="#skilss" class="hover:text-gray-300 font-semibold block py-3 tracking-wider">Skills</a>
+          <a href="#projects" class="hover:text-gray-300 font-semibold block py-3">projects</a>
+          <a href="#contact" class="hover:text-gray-300 font-semibold block py-3">Contact</a>
+          <div class="mt-10 mb-5">
+            <a
+              href="public/assets/resume/Cv M Dimas Syafutra.pdf"
+              download
+              target="_blank"
+              class="px-3 py-2 rounded-lg border-2 tracking-widest hover:bg-primary border-primary text-font font-medium text-sm hover:shadow-lg hover:shadow-[#5dadec3b] transition-all ease-in-out duration-300"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="max-w-7xl mx-auto p-5 text-font lg:h-screen">
+      <div class="pt-20 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="md:w-1/2 md:order-2">
+          <img src="public/assets/img/hero.png" alt="" class="md:w-[400px] lg:w-[550px] lg:ml-32 ml-5 animate-bounce" />
+        </div>
+        <div class="md:w-1/2 md:order-1">
+          <p class="lg:text-lg md:text-lg text-base mb-4 tracking-wider">Hi, my name is</p>
+          <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold mb-5 tracking-wider">M. Dimas Syafutra</h2>
+          <h3 class="lg:text-2xl md:text-base text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-10 tracking-wider">Fullstack Web Developer</h3>
+          <div class="flex gap-4 lg:text-xl text-xl">
+            <a href="https://github.com/mdimassyafutraa?tab=repositories" target="_blank" class="flex items-center">
+              <i class="fa-brands fa-github hover:text-primary transition-all duration-300"></i>
+            </a>
+            <a href="https://www.instagram.com/_mdimas.s/" target="_blank" class="flex items-center">
+              <i class="fa-brands fa-instagram hover:text-primary transition-all duration-300"></i>
+            </a>
+            <a href="mailto:mdimassyafutra10@gmail.com" class="flex items-center">
+              <i class="fa-solid fa-envelope hover:text-primary transition-all duration-300"></i>
+            </a>
+          </div>
+          <div class="mt-10">
+            <a href="#contact" class="px-8 py-4 rounded-lg border-2 tracking-widest hover:bg-primary border-primary text-font font-semibold hover:shadow-lg hover:shadow-[#5dadec3b] transition-all ease-in-out duration-300">Contact me!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="max-w-7xl mx-auto p-5 text-font mt-32 lg:h-screen" id="about">
+      <div class="text-center text-primary">
+        <h3 class="text-2xl font-semibold mb-5">
+          About
+          <span class="text-font">Me</span>
+        </h3>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between w-full">
+        <div class="md:w-1/2 md:order-2" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <p class="text-xs text-font lg:text-base antialiased border-primary border-2 p-10 rounded-xl text-justify shadow-[#5dadec3b] shadow-lg indent-8">
+            As a junior fullstack web developer, I've acquired valuable experience in working on various projects utilizing frameworks like Laravel and Bootstrap, as well as making use of libraries such as Tailwind and Node.js. I've been
+            engaged in different stages of development, ranging from initial planning to final implementation, showcasing a solid grasp of industry best practices in web development. Moreover, I possess firsthand experience in fulfilling
+            administrative duties for open house events. In this role, I've overseen the management of applications I've developed, ensuring seamless operations and addressing user requirements effectively. This exposure has not only
+            enhanced my technical proficiency but also honed my skills in project management and team communication.
+          </p>
+        </div>
+        <div class="md:w-1/2 md:order-1" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <img src="public/assets/img/hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skilss -->
+    <section class="max-w-7xl mx-auto p-5 text-font mt-32" id="skills">
+      <div class="text-center text-font">
+        <h3 class="text-2xl font-semibold mb-5 tracking-wider">Skilss</h3>
+      </div>
+      <div class="flex justify-center w-full mb-10">
+        <img src="public/assets/img/skills/markup.png" alt="" class="border-[#5dadec3b] border-x-4 shadow-[#5dadec3b] shadow-lg rounded-xl" />
+      </div>
+      <!-- Swipper -->
+      <div class="swiper mySwiper border-[#5dadec3b] border-x-4 shadow-[#5dadec3b] shadow-lg rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="public/assets/img/skills/programing.png" alt="" class="w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/assets/img/skills/library.png" alt="" class="w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/assets/img/skills/framework.png" alt="" class="w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/assets/img/skills/more.png" alt="" class="w-full" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="max-w-7xl mx-auto p-5 text-font mt-32" id="projects">
+      <div class="text-center text-font">
+        <h3 class="text-2xl font-bold mb-5">Recent <span class="text-primary">Projects</span></h3>
+      </div>
+      <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+        <!-- Open House -->
+        <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <a href="pages/openHouse.html"> <img src="public/assets/img/openHouse/1.png" alt="" class="w-full" /></a>
+          </div>
+          <h2 class="text-font font-semibold mt-4 mb-2">Open House UPT Balai Yasa Lahat</h2>
+          <p class="text-sm text-justify text-gray-400">
+            The website utilized for signing up for the open house event at UPT Balai Yasa Lahat includes a sign-up form, QR code creation for participant tickets, management of participant quotas, QR code scanning functionality, and a tool
+            for accessing and organizing participant data in Excel format.
+          </p>
+          <a href="pages/openHouse.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
+          <div class="mt-4 font-semibold text-gray-500">
+            <span>
+              <i class="fa-solid fa-gear"></i>
+            </span>
+            HTML, Bootstrap, Javascript, Laravel
+          </div>
+        </div>
+        <!-- GuestBook -->
+        <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <a href="pages/guestBook.html"> <img src="public/assets/img/guestBook/1.png" alt="" class="w-full" /></a>
+          </div>
+          <h2 class="text-font font-semibold mt-4 mb-2">Guestbook Application</h2>
+          <p class="text-sm text-justify text-gray-400">
+            The website I've developed serves as a guest registration platform, simplifying the process of recording guest arrivals at UPT Balai Yasa Lahat. With functionalities including guest data entry, QR code generation and scanning,
+            guest record keeping in Excel format, and visualization of daily, weekly, and monthly guest counts, this platform offers a complete solution for efficient and well-organized guest management.
+          </p>
+          <a href="pages/guestBook.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
+          <div class="mt-4 font-semibold text-gray-500">
+            <span>
+              <i class="fa-solid fa-gear"></i>
+            </span>
+            HTML, Tailwind, Javascript, Laravel
+          </div>
+        </div>
+        <!-- art venue rental platform -->
+        <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="rounded-md shadow-md overflow-hidden">
+            <a href="pages/silandung.html"><img src="public/assets/img/silandung/1.png" alt="" class="w-full" /></a>
+          </div>
+          <h2 class="text-font font-semibold mt-4 mb-2">Art Venue Rental Platform</h2>
+          <p class="text-sm text-justify text-gray-400">
+            The website is a platform for renting art venues, designed to simplify the booking process. It includes features for users to input their booking details and access a schedule calendar to check the real-time availability of
+            venue rentals. This makes it a convenient tool for event planners to schedule their events efficiently and on time.
+          </p>
+          <a href="pages/silandung.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
+          <div class="mt-4 font-semibold text-gray-500">
+            <span>
+              <i class="fa-solid fa-gear"></i>
+            </span>
+            HTML, Tailwind, Javascript, Laravel
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="max-w-7xl mx-auto p-5 text-font mt-32 lg:h-screen" id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="flex w-full justify-center items-center">
+        <div class="shadow-[#5dadec3b] shadow-lg w-full max-w-4xl p-8 rounded-xl text-font flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
+          <!-- Phone, email -->
+          <div class="flex flex-col justify-between space-y-8">
+            <div class="mb-4">
+              <h1 class="font-bold text-4xl tracking-wide">Contact Me!</h1>
+              <p class="pt-2">M. Dimas Syafutra</p>
+            </div>
+            <div class="flex flex-col space-y-6">
+              <div class="inline-flex space-x-2 items-center text-xs lg:text-base">
+                <a href="https://api.whatsapp.com/send?phone=628989356598" target="_blank" class="hover:text-primary transition-all duration-300 ease-in-out">
+                  <i class="fa-brands fa-whatsapp text-base lg:text-xl"></i>
+                  <span class=""> +(62) 8989 3565 98</span>
+                </a>
+              </div>
+              <div class="inline-flex space-x-2 items-center text-xs lg:text-base">
+                <a href="mailto:mdimassyafutra10@gmail.com" target="_blank" class="hover:text-primary transition-all duration-300 ease-in-out">
+                  <i class="fa-solid fa-envelope text-base lg:text-xl"></i>
+                  <span class="">mdimassyafutra10@gmail.com</span>
+                </a>
+              </div>
+              <div class="inline-flex space-x-2 items-center text-xs lg:text-base">
+                <i class="fa-solid fa-location-dot text-base lg:text-xl"></i>
+                <span class="">Yogyakarta</span>
+              </div>
+            </div>
+            <div class="flex space-x-4 text-xl">
+              <a href="https://github.com/mdimassyafutraa?tab=repositories" target="_blank" class="hover:text-secondary">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/_mdimas.s/" target="_blank" class="hover:text-secondary">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Form Contact -->
+          <div class="rounded-xl p-8 text-gray-900">
+            <div id="alert-1" class="my-alert w-full lg:mx-auto hidden items-center p-4 mb-4 text-font rounded-lg bg-secondary shadow-[#5dadec3b] shadow-lg" role="alert"></div>
+            <form action="" class="flex flex-col space-y-4" name="mdimassyafutra_contact_form">
+              <div>
+                <label for="name" class="text-sm text-gray-300">Name</label>
+                <input type="text" placeholder="Your name" name="name" id="name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-primary mt-2" />
+              </div>
+              <div>
+                <label for="email" class="text-sm text-gray-300">Email Address</label>
+                <input type="email" placeholder="Email Address" name="email" id="email" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-primary mt-2" />
+              </div>
+              <div>
+                <label for="message" class="text-sm text-gray-300">Message</label>
+                <textarea placeholder="Message" rows="4" name="message" id="message" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-primary mt-2"></textarea>
+              </div>
+              <div class="w-full">
+                <button type="submit" class="btn-send text-base font-semibold bg-secondary text-font py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300">Send</button>
+                <!-- btn Load -->
+                <button
+                  disabled
+                  type="button"
+                  class="btn-load hidden text-base font-semibold border-2 border-secondary text-font py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300 focus:ring-4 focus:ring-blue-300 text-center mr-2 centered-button"
+                >
+                  <svg aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="#E5E7EB"
+                    />
+                    <path
+                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  Sending...
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Button Up -->
+    <section>
+      <!-- Button Up -->
+      <button id="scrollTopButton" class="buttonup fixed bottom-4 right-4 bg-primary hover:bg-sky-500 text-font text-xl w-10 h-10 rounded-full shadow-lg flex items-center justify-center cursor-pointer" title="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </section>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="public/src/swiper.js"></script>
+  <script src="public/src/script.js"></script>
+  <!-- Animation Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
