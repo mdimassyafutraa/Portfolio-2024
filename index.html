@@ -40,7 +40,7 @@
           <!-- Large Device -->
           <div class="hidden md:flex space-x-10 items-center">
             <a href="#about" class="hover:text-gray-300 font-semibold">About</a>
-            <a href="#skills" class="hover:text-gray-300 font-semibold tracking-wider">Skilss</a>
+            <a href="#skills" class="hover:text-gray-300 font-semibold tracking-wider">Skills</a>
             <a href="#projects" class="hover:text-gray-300 font-semibold">projects</a>
             <a href="#contact" class="hover:text-gray-300 font-semibold">Contact</a>
             <a
@@ -114,7 +114,7 @@
       </div>
       <div class="flex flex-col md:flex-row md:items-center md:justify-between w-full">
         <div class="md:w-1/2 md:order-2" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <p class="text-xs text-font lg:text-base antialiased border-primary border-2 p-10 rounded-xl text-justify shadow-[#5dadec3b] shadow-lg indent-8">
+          <p class="text-base text-font lg:text-lg antialiased border-primary border-2 p-10 rounded-xl shadow-[#5dadec3b] shadow-lg indent-8">
             As a junior fullstack web developer, I've acquired valuable experience in working on various projects utilizing frameworks like Laravel and Bootstrap, as well as making use of libraries such as Tailwind and Node.js. I've been
             engaged in different stages of development, ranging from initial planning to final implementation, showcasing a solid grasp of industry best practices in web development. Moreover, I possess firsthand experience in fulfilling
             administrative duties for open house events. In this role, I've overseen the management of applications I've developed, ensuring seamless operations and addressing user requirements effectively. This exposure has not only
@@ -130,13 +130,13 @@
     <!-- Skilss -->
     <section class="max-w-7xl mx-auto p-5 text-font mt-32" id="skills">
       <div class="text-center text-font">
-        <h3 class="text-2xl font-semibold mb-5 tracking-wider">Skilss</h3>
+        <h3 class="text-2xl font-semibold mb-5 tracking-wider">Skills</h3>
       </div>
-      <div class="flex justify-center w-full mb-10">
+      <div class="flex justify-center w-full mb-10" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <img src="public/assets/img/skills/markup.png" alt="" class="border-[#5dadec3b] border-x-4 shadow-[#5dadec3b] shadow-lg rounded-xl" />
       </div>
       <!-- Swipper -->
-      <div class="swiper mySwiper border-[#5dadec3b] border-x-4 shadow-[#5dadec3b] shadow-lg rounded-xl">
+      <div class="swiper mySwiper border-[#5dadec3b] border-x-4 shadow-[#5dadec3b] shadow-lg rounded-xl" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="public/assets/img/skills/programing.png" alt="" class="w-full" />
@@ -160,66 +160,90 @@
       <div class="text-center text-font">
         <h3 class="text-2xl font-bold mb-5">Recent <span class="text-primary">Projects</span></h3>
       </div>
-      <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-        <!-- Open House -->
-        <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="rounded-md shadow-md overflow-hidden">
-            <a href="pages/openHouse.html"> <img src="public/assets/img/openHouse/1.png" alt="" class="w-full" /></a>
+      <div class="swiper mySwiper w-full px-4 flex flex-wrap justify-center border-[#5dadec3b] border-x-4 shadow-[#5dadec3b] shadow-lg rounded-xl">
+        <div class="swiper-wrapper">
+          <!-- Open House -->
+          <div class="swiper-slide">
+            <div class="mb-12 p-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <a href="pages/openHouse.html"> <img src="public/assets/img/openHouse/1.png" alt="" class="w-full" /></a>
+              </div>
+              <h2 class="text-primary font-bold mt-4 mb-2 text-left">Open House <span class="text-font font-medium">| UPT Balai Yasa Lahat</span></h2>
+              <p class="text-sm text-justify text-gray-400">
+                The website utilized for signing up for the open house event at UPT Balai Yasa Lahat includes a sign-up form, QR code creation for participant tickets, management of participant quotas, QR code scanning functionality, and a
+                tool for accessing and organizing participant data in Excel format.
+              </p>
+              <a href="pages/openHouse.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
+              <div class="mt-4 font-semibold text-gray-500 text-left">
+                <span>
+                  <i class="fa-solid fa-gear"></i>
+                </span>
+                HTML, Bootstrap, Javascript, Laravel
+              </div>
+              <div class="text-2xl mt-2 text-left text-gray-500">
+                <a href="https://github.com/mdimassyafutraa/openhouse_upt_balai_yasa_lahat" target="_blank" class="hover:text-secondary">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <h2 class="text-font font-semibold mt-4 mb-2">Open House UPT Balai Yasa Lahat</h2>
-          <p class="text-sm text-justify text-gray-400">
-            The website utilized for signing up for the open house event at UPT Balai Yasa Lahat includes a sign-up form, QR code creation for participant tickets, management of participant quotas, QR code scanning functionality, and a tool
-            for accessing and organizing participant data in Excel format.
-          </p>
-          <a href="pages/openHouse.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
-          <div class="mt-4 font-semibold text-gray-500">
-            <span>
-              <i class="fa-solid fa-gear"></i>
-            </span>
-            HTML, Bootstrap, Javascript, Laravel
+          <!-- GuestBook -->
+          <div class="swiper-slide">
+            <div class="mb-12 p-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <a href="pages/guestBook.html"> <img src="public/assets/img/guestBook/1.png" alt="" class="w-full" /></a>
+              </div>
+              <h2 class="text-primary font-bold mt-4 mb-2 text-left">Guestbook Application <span class="font-medium text-font">| UPT Balai Yasa Lahat</span></h2>
+              <p class="text-sm text-justify text-gray-400">
+                The website I've developed serves as a guest registration platform, simplifying the process of recording guest arrivals at UPT Balai Yasa Lahat. With functionalities including guest data entry, QR code generation and
+                scanning, guest record keeping in Excel format, and visualization of daily, weekly, and monthly guest counts, this platform offers a complete solution for efficient and well-organized guest management.
+              </p>
+              <a href="pages/guestBook.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
+              <div class="mt-4 font-semibold text-gray-500 text-left">
+                <span>
+                  <i class="fa-solid fa-gear"></i>
+                </span>
+                HTML, Tailwind, Javascript, Laravel
+              </div>
+              <div class="text-2xl mt-2 text-left text-gray-500">
+                <a href="https://github.com/mdimassyafutraa/Buku-Tamu-Balai-Yasa-Lahat" target="_blank" class="hover:text-secondary">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- art venue rental platform -->
+          <div class="swiper-slide">
+            <div class="mb-12 p-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <a href="pages/silandung.html"><img src="public/assets/img/silandung/1.png" alt="" class="w-full" /></a>
+              </div>
+              <h2 class="text-primary font-bold mt-4 mb-2 text-left">Art Venue Rental Platform <span class="font-medium text-font">| Dinas Kebudayaan (kundha kabudayan) kabupaten Sleman</span></h2>
+              <p class="text-sm text-justify text-gray-400">
+                The website is a platform for renting art venues, designed to simplify the booking process. It includes features for users to input their booking details and access a schedule calendar to check the real-time availability of
+                venue rentals. This makes it a convenient tool for event planners to schedule their events efficiently and on time.
+              </p>
+              <a href="pages/silandung.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
+              <div class="mt-4 font-semibold text-gray-500 text-left">
+                <span>
+                  <i class="fa-solid fa-gear"></i>
+                </span>
+                HTML, Tailwind, Javascript, Laravel
+              </div>
+              <div class="text-2xl mt-2 text-left text-gray-500">
+                <a href="https://github.com/mdimassyafutraa/Dinas-Kebudayaan-Sleman" target="_blank" class="hover:text-secondary">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- GuestBook -->
-        <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="rounded-md shadow-md overflow-hidden">
-            <a href="pages/guestBook.html"> <img src="public/assets/img/guestBook/1.png" alt="" class="w-full" /></a>
-          </div>
-          <h2 class="text-font font-semibold mt-4 mb-2">Guestbook Application</h2>
-          <p class="text-sm text-justify text-gray-400">
-            The website I've developed serves as a guest registration platform, simplifying the process of recording guest arrivals at UPT Balai Yasa Lahat. With functionalities including guest data entry, QR code generation and scanning,
-            guest record keeping in Excel format, and visualization of daily, weekly, and monthly guest counts, this platform offers a complete solution for efficient and well-organized guest management.
-          </p>
-          <a href="pages/guestBook.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
-          <div class="mt-4 font-semibold text-gray-500">
-            <span>
-              <i class="fa-solid fa-gear"></i>
-            </span>
-            HTML, Tailwind, Javascript, Laravel
-          </div>
-        </div>
-        <!-- art venue rental platform -->
-        <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <div class="rounded-md shadow-md overflow-hidden">
-            <a href="pages/silandung.html"><img src="public/assets/img/silandung/1.png" alt="" class="w-full" /></a>
-          </div>
-          <h2 class="text-font font-semibold mt-4 mb-2">Art Venue Rental Platform</h2>
-          <p class="text-sm text-justify text-gray-400">
-            The website is a platform for renting art venues, designed to simplify the booking process. It includes features for users to input their booking details and access a schedule calendar to check the real-time availability of
-            venue rentals. This makes it a convenient tool for event planners to schedule their events efficiently and on time.
-          </p>
-          <a href="pages/silandung.html" class="underline text-sm text-primary hover:text-secondary">See more</a>
-          <div class="mt-4 font-semibold text-gray-500">
-            <span>
-              <i class="fa-solid fa-gear"></i>
-            </span>
-            HTML, Tailwind, Javascript, Laravel
-          </div>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="max-w-7xl mx-auto p-5 text-font mt-32 lg:h-screen" id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <section class="max-w-7xl mx-auto p-5 text-font mt-32 lg:h-screen" id="contact" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
       <div class="flex w-full justify-center items-center">
         <div class="shadow-[#5dadec3b] shadow-lg w-full max-w-4xl p-8 rounded-xl text-font flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
           <!-- Phone, email -->
